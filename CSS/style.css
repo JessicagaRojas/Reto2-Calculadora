@@ -1,5 +1,6 @@
 body {
-    background-color: #AD6989
+     background: rgb(2,0,36);
+     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(153,10,88,0.34883720930232553) 35%, rgba(0,212,255,1) 100%);
  }
 
  #contenedor-calculadora {
@@ -9,14 +10,17 @@ body {
      margin-top: 15em; 
      margin-left: 15em;
      border-radius: 15%;
-    
+     box-shadow: 8px 6px #ccf, -8px 10px #fcf, -2px -5px #cfc, 10px -2px #fc9;
+     color: #999;
  }
 
  #casia {
      font-family: monospace;
      color: lightskyblue;
      font-style: oblique;
+     text-shadow: 1px 3px blueviolet;
      margin-top: -2em;
+     border-style: solid 1px white;
 
  }
 
@@ -25,8 +29,9 @@ body {
       margin: -0.5em -2em;
       border-radius: 25%;
       background-color: gray;
+      box-shadow: 1px 2px blueviolet;
       padding: 1.5em 8em
-     
+        
     
  }
 
@@ -37,56 +42,65 @@ body {
        color: white;
        font-size: 30px;
        font-family: monospace;
+       text-shadow: 1px 1px white, -1px -1px #333;
        font-style: italic;    
  }
 
   /* BOTONES */
 
   #allbuttons {
-      margin-top: 5em;
+     margin-top: 5em;
      font-family: monospace
      background-color black
-    
-
- }
+  }
 
  #botonMas, #botonMenos, #botonMult, #botonDiv {
      width: 45px;
      height: 45px;
      border-radius: 50%;
+     margin-bottom: 6px;
      background-color: blanchedalmond
- }
-
- #botonMult, #botonDiv {
-     rotate: 30%;
+     
  }
 
  #siete, #ocho, #nueve {
      width: 60px;
      height: 60px;
+     margin-bottom: 4px;
      border-radius: 20%;
+     box-shadow: 1px 1px 1px lightcoral;
+     
  }
 
  #cuatro, #cinco, #seis {
      width: 60px;
      height: 60px;
+     margin-bottom: 4px;
      border-radius: 20%;
+     box-shadow: 1px 1px 1px lightcoral;
  }
 
  #uno, #dos, #tres {
      width: 60px;
      height: 60px;
+     margin-bottom: 4px;
      border-radius: 20%;
+     box-shadow: 1px 1px 1px lightcoral;
  }
 
  #cero, #botonpunto, #clear {
      width: 60px;
      height: 60px;
+     margin-bottom: 4px;
      border-radius: 20%;
+     box-shadow: 1px 1px 1px lightcoral;
  }
 
- #botonClear {
-     background-color: lightsalmon;
+ #clear {
+     background-color: lightpink;
+     font-weight: bold;
+     font-size: 20px;
+     color: tomato
  }
 
  #botonigual {
@@ -94,13 +108,33 @@ body {
      height: 60px;
      margin-left: 3.2em;
      border-radius: 20%;
+     box-shadow: 1px 1px 1px lightcoral;
  }
 
 
+ /*DECORACIÓN*/
+
+ .lineas {
+     display: flex;
+     align-content: flex-end;
+     height: 1px;
+     background-color: violet;
+     transform: rotate(145deg);
+     margin-right: -5em
+    
+ }
 
 
-/* PSEUDOELEMENTOS */
+ /* PSEUDOELEMENTOS */
 
- #allbuttons:hover {
-    border-color: orange;
-}
+ #siete:hover, #ocho:hover, #nueve:hover, #cuatro:hover, #cinco:hover, #seis:hover, #uno:hover, #dos:hover, #tres:hover {
+    color: lightsalmon;
+ }
+
+ #punto:hover, #cero:hover, #clear:hover, #botonigual:hover {
+    color: lightsalmon;
+ }
+
+ #botonMas:hover, #botonMenos:hover, #botonMult:hover, #botonDiv:hover {
+    color: lightsalmon;
+ }
