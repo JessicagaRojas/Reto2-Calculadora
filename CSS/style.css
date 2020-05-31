@@ -1,0 +1,106 @@
+body {
+    background-color: #AD6989
+ }
+
+ #contenedor-calculadora {
+     background-color: teal;
+     position: absolute;
+     padding: 5em 4em;
+     margin-top: 15em; 
+     margin-left: 15em;
+     border-radius: 15%;
+    
+ }
+
+ #casia {
+     font-family: monospace;
+     color: lightskyblue;
+     font-style: oblique;
+     margin-top: -2em;
+
+ }
+
+  #pantalla {
+      position: absolute;
+      margin: -0.5em -2em;
+      border-radius: 25%;
+      background-color: gray;
+      padding: 1.5em 8em
+     
+    
+ }
+
+   #resultado {
+       position: absolute;
+       align-items: center;
+       margin-top: -0.7em;
+       color: white;
+       font-size: 30px;
+       font-family: monospace;
+       font-style: italic;    
+ }
+
+  /* BOTONES */
+
+  #allbuttons {
+      margin-top: 5em;
+     font-family: monospace
+     background-color black
+    
+
+ }
+
+ #botonMas, #botonMenos, #botonMult, #botonDiv {
+     width: 45px;
+     height: 45px;
+     border-radius: 50%;
+     background-color: blanchedalmond
+ }
+
+ #botonMult, #botonDiv {
+     rotate: 30%;
+ }
+
+ #siete, #ocho, #nueve {
+     width: 60px;
+     height: 60px;
+     border-radius: 20%;
+ }
+
+ #cuatro, #cinco, #seis {
+     width: 60px;
+     height: 60px;
+     border-radius: 20%;
+ }
+
+ #uno, #dos, #tres {
+     width: 60px;
+     height: 60px;
+     border-radius: 20%;
+ }
+
+ #cero, #botonpunto, #clear {
+     width: 60px;
+     height: 60px;
+     border-radius: 20%;
+ }
+
+ #botonClear {
+     background-color: lightsalmon;
+ }
+
+ #botonigual {
+     width: 120px;
+     height: 60px;
+     margin-left: 3.2em;
+     border-radius: 20%;
+ }
+
+
+
+
+/* PSEUDOELEMENTOS */
+
+ #allbuttons:hover {
+    border-color: orange;
+}
